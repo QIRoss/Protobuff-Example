@@ -1,0 +1,14 @@
+services:
+  service_a:
+    build:
+      context: ./service_a
+    ports:
+      - "8000:8000"
+    depends_on:
+      - service_b
+
+  service_b:
+    build:
+      context: ./service_b
+    ports:
+      - "8001:8001"

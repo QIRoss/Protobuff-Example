@@ -1,0 +1,4 @@
+fastapi
+protobuf
+uvicorn
+httpx
